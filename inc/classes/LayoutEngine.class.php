@@ -56,7 +56,7 @@ class LayoutEngine {
     function addContentFooter($msg) {
     	$tmp = '<div class="content_footer">'.$msg.'</div>'. "\n";
     	if ($this->buffering) {
-    		$this->content['content_footer'][] = $tmp;
+    		$this->content['content_footer'] = $tmp;
     	} else {
     		print $tmp;
     	}
